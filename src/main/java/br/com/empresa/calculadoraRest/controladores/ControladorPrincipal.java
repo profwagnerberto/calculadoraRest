@@ -19,4 +19,16 @@ public class ControladorPrincipal {
     double resultado = valor1 - valor2;
     return "Resultado: " + resultado;
   }
+
+  @GetMapping("/multiplicar")
+  public String multiplicar(double valor1,double valor2) {
+    double resultado = valor1 * valor2;
+    return "Resultado: " + resultado;
+  }
+
+  @GetMapping("/dividir")
+  public String dividir(double valor1,double valor2) {
+    double resultado = valor1 / valor2;
+    return "Resultado: " + resultado;
+  }
 }

@@ -109,6 +109,64 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "calculadora/multiplicar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/calculadora/multiplicar?valor1=3&valor2=9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculadora",
+						"multiplicar"
+					],
+					"query": [
+						{
+							"key": "valor1",
+							"value": "3"
+						},
+						{
+							"key": "valor2",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculadora/dividir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/calculadora/dividir?valor1=50&valor2=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculadora",
+						"dividir"
+					],
+					"query": [
+						{
+							"key": "valor1",
+							"value": "50"
+						},
+						{
+							"key": "valor2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
