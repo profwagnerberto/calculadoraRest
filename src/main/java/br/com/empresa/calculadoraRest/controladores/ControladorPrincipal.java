@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/calculadora")
 public class ControladorPrincipal {
 
-  @GetMapping
+  @GetMapping("/somar")
   public String somar(double valor1,double valor2) {
     double resultado = valor1 + valor2;
+    return "Resultado: " + resultado;
+  }
+
+  @GetMapping("/subtrair")
+  public String subtrair(double valor1,double valor2) {
+    double resultado = valor1 - valor2;
     return "Resultado: " + resultado;
   }
 }

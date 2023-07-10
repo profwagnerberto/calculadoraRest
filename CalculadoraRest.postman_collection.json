@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ebc7d1c7-d370-4105-b760-2bd278d2f186",
+		"_postman_id": "8b2b1825-fe83-4e60-b4df-b0751100ce60",
 		"name": "CalculadoraRest",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "25731467"
@@ -46,6 +46,64 @@
 						{
 							"key": "valor2",
 							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculadora/somar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/calculadora/somar?valor1=15&valor2=35",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculadora",
+						"somar"
+					],
+					"query": [
+						{
+							"key": "valor1",
+							"value": "15"
+						},
+						{
+							"key": "valor2",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculadora/subtrair",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/calculadora/subtrair?valor1=50&valor2=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculadora",
+						"subtrair"
+					],
+					"query": [
+						{
+							"key": "valor1",
+							"value": "50"
+						},
+						{
+							"key": "valor2",
+							"value": "10"
 						}
 					]
 				}
